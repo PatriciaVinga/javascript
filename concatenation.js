@@ -1,5 +1,3 @@
-var words=["$5", "Harvey has ", " dollars"];
-words[0];
-words[1];
-words[2];
-document.getElementById("demo").innerHTML=words[1]+words[0]+words[2];
+var numbers=[4, 5, 6, 7];
+
+document.getElementById("demo").innerHTML=(numbers[0]+numbers[1]+numbers[2]+numbers[3])/numbers.length;
