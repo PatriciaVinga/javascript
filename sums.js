@@ -5,10 +5,10 @@ var i = 1;
 
 
 
-while (i < 35) {
+do {
     text += i + ","
     i++;
 }
-
+while(i<35)
 
 document.getElementById("demo").innerHTML = text;
