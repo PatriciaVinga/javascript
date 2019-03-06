@@ -3,10 +3,12 @@ var i = 0;
 var text = "<ul>";
 
 cars.pop();
-while (i < cars.length) {
+do {
     text +=  "<li>" + cars[i]  + "</li>";
     i++;
 }
+while(i<cars.length)
+
 text += "</ul>";
 
 document.getElementById("demo").innerHTML = text;
