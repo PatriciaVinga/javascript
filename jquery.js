@@ -1,9 +1,12 @@
 
 $(document).ready(function(){
-  $("h1").click(function(){
-    $(this).hide();
-  $("p").click(function(){
-    $(this).hide();
+  $("ul li:first").click(function(){
+    $("ul li:first").hide();
   });
+});
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".weAreOne").hide();
   });
 });
