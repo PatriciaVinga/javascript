@@ -17,3 +17,10 @@ $(document).ready(function(){
     $(".weAreOne").show();
   });
 });
+
+
+$(document).ready(function(){
+  $("button#show").dbclick(function(){
+    $("ul li:first").show();
+  });
+});
