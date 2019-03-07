@@ -7,14 +7,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("button#hide").click(function(){
-    $(".weAreOne").hide();
+    $(".weAreOne").fadeOut(4000);
   });
 });
 
 
 $(document).ready(function(){
   $("button#show").click(function(){
-    $(".weAreOne").show();
+    $(".weAreOne").fadeIn(7000);
   });
 });
 
