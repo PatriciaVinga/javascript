@@ -6,7 +6,14 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("button").click(function(){
+  $("button#hide").click(function(){
     $(".weAreOne").hide();
+  });
+});
+
+
+$(document).ready(function(){
+  $("button#show").click(function(){
+    $(".weAreOne").show();
   });
 });
