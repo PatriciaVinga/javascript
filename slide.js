@@ -1,7 +1,6 @@
 $(document).ready(function(){
   $("#flip").click(function(){
-    $("#panel").slideDown("slow");
-
+    $("#panel").slideDown(10000);
   });
 });
 
@@ -9,6 +8,14 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("button#panelUp").click(function(){
     $("#panel").slideUp("slow");
+
+  });
+});
+
+
+$(document).ready(function(){
+  $("button#panelStop").click(function(){
+    $("#panel").stop();
 
   });
 });
