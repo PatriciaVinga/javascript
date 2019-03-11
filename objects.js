@@ -7,4 +7,4 @@ var car = {
 };
 
 document.getElementById("demo").innerHTML="This is a " + car.brand + " car called a " + car.make + "!";
-document.getElementById("demo2").innerHTML="It is a " + car.type + " and was realeased in " + car.yearOfRelease + ".";
+document.getElementById("demo2").innerHTML="It is a " + car.type + " and was released in " + car.yearOfRelease + ".";
