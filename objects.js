@@ -16,16 +16,40 @@ var rangeRover ={
 };
 
 
+var pickUp = {
+  brand: "Nissan",
+  make: "Hard Body",
+  type: "Pick Up Truck",
+  color: "grey",
+  yearOfRelease: 2003
+};
+
+
 var cars = [car, rangeRover];
+cars.splice(0, 0, pickUp);
+var i = 0;
 
-var text = "This is a "
-var text2 = " It is a "
+var text = "This is a ";
+var text2 = " It is a ";
 
-for (var i=0; i<cars.length; i++){
+
+do {
+
   text += cars[i].brand + " car called a " + cars[i].make + "!" + "<br>" + text2 +
    cars[i].type + " which is " + cars[i].color + " and was released in " +
    cars[i].yearOfRelease + "</br>" + "<br>";
+   i++;
+}
 
-};
+while(i<cars.length)
+
+
+$(document).ready(function(){
+  $("button#show").click(function(){
+    $("#demo").fadeIn(3000);
+  });
+});
+
+
 
 document.getElementById("demo").innerHTML=text;
