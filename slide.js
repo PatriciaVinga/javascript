@@ -25,3 +25,6 @@ $("#panel").css("background-color", "#00ffff")
 alert("Hi, I'm an alert");
 
 $("#panel").text("Click me and see");
+
+
+$("#panel").html("<b>Hello world!</b>");
