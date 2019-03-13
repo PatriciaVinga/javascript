@@ -29,13 +29,13 @@ var cars = [car, rangeRover];
 cars.splice(0, 0, pickUp);
 var i = 0;
 
-var text = "This is a ";
-var text2 = " It is a ";
+var text = " ";
+
 
 
 do {
 
-  text += cars[i].brand + " car called a " + cars[i].make + "!" + "<br>" + text2 +
+  text += "This is a " + cars[i].brand + " car called a " + cars[i].make + "!" + "<br>" + "It is a " +
    cars[i].type + " which is " + cars[i].color + " and was released in " +
    cars[i].yearOfRelease + "</br>" + "<br>";
    i++;
