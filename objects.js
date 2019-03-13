@@ -54,5 +54,11 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+  $("button#show").dbclick(function(){
+    $("#demo").fadeOut(1000);
+  });
+});
+
 
 document.getElementById("demo").innerHTML=text;
