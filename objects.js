@@ -30,12 +30,15 @@ cars.splice(0, 0, pickUp);
 var i = 0;
 
 var text = " ";
+var text1 = "This is a ";
+var text2 = " It is a ";
+
 
 
 
 do {
 
-  text += "This is a " + cars[i].brand + " car called a " + cars[i].make + "!" + "<br>" + "It is a " +
+  text += text1 + cars[i].brand + " car called a " + cars[i].make + "!" + "<br>" + text2 +
    cars[i].type + " which is " + cars[i].color + " and was released in " +
    cars[i].yearOfRelease + "</br>" + "<br>";
    i++;
