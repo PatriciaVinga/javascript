@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script>
+			function Student(firstName, lastName, gender, relationshipStatus) {
+
+				this.name = firstName;
+				this.surname = lastName;
+				this.gender = gender;
+				this.status = relationshipStatus;
+
+				this.greeting = function(){
+					document.write("Hi, my name is " + this.name + " and I am " + this.status+ "<br/>");
+				}
+			};
+			var student1 = new Student("Patricia", "Vinga", "female", "taken");
+			var student2 = new Student("Ruvimbo", "Nhau", "female", "single");
+
+			student1.greeting();
+
+			student2.greeting();
+
+
+			
+		</script>
+
+	</head>
+
+</html>
