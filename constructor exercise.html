@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script>
+			function House(yearBuilt, numberOfRooms, address, color) {
+
+				this.year = yearBuilt;
+				this.rooms = numberOfRooms;
+				this.address = address;
+				this.color = color;
+
+				this.information = function(){
+					document.write("This house is at " + this.address + ". It is " + this.color + " and has " + this.rooms + " rooms." + " It was built in " + this.year + "." + "<br/>");
+				}
+			};
+			var Glenlorne = new House("1994", "7", "949 Oak road", "beige");
+			var Mabelreign = new House("2002", "13", "25 Regal Crescent", "blue");
+
+			Glenlorne.information();
+
+			Mabelreign.information();
+
+
+			
+		</script>
+
+	</head>
+
+</html>
