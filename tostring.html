@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<script>
+			function Person(firstName, lastName, age, gender, interests){
+				this.name = firstName;
+				this.surname = lastName;
+				this.age = age;
+				this.gender = gender;
+				this.interests = interests;
+
+				this.toString = function(){
+					document.write("Hi, my name is " + this.name + " of house " + this.surname + "." + " I am " + this.age + " and I am a " + this.gender + " and I like " + this.interests + ". <br/>");
+				}
+
+			};
+
+
+
+
+			var person1 = new Person("Taurai", "Munodawafa", 24, "male", ["movies", " and music"]);
+			var person2 = new Person("Yvonne", "Mare", 20, "female", ["travelling", " and food"]);
+			var person3 = new Person("Gracious", "Nyama", 21, "female", ["sports", " and reading"]);
+			var person4 = new Person("Fortunate", "Mapedza", 22, "female", ["chilling"," and making money"]);
+			var person5 = new Person("Joy", "Gomba", 23, "female", ["movies"," and dancing"]);
+			var person6 = new Person("Tatenda", "Marshall", 25, "male", ["coding"," and Winky D"]);
+			var person7 = new Person("Spa", "Ndlovu", 24, "female", ["designing"," and cycling"]);
+			
+
+
+			person1.toString();
+			person2.toString();
+			person3.toString();
+			person4.toString();
+			person5.toString();
+			person6.toString();
+			person7.toString();
+
+
+
+			
+			function ClassRoom(firstName, students){
+				this.name = firstName;
+				this.students = students;
+
+
+				this.averageAge = function(){
+					var totalAge = 0;
+					
+					for(i=0; i<this.students.length; i++){
+						totalAge += this.students[i].age;
+					}
+
+					var average = totalAge/students.length;
+
+					document.write("The average age of the class is " + average + "<br/>");
+				}
+
+
+
+				this.toString = function(){
+					text = "<br/><br/>Our class list is as follows:<br/><ul>";
+					
+					for(i=0; i<this.students.length; i++){
+						text += "<li>" + this.students[i].name + " " + this.students[i].surname + "</li>";
+
+						
+					}
+
+					text += "</ul>";
+					document.write(text);
+				}
+
+
+
+			};
+
+			var microworkspace = new ClassRoom("Microworkspace ", [person1, person2, person3, person4, person5, person6, person7]);
+			var register = new ClassRoom("Register", [person1, person2, person3, person4, person5, person6, person7]);
+			
+			microworkspace.averageAge();
+			register.toString();
+			
+
+			
+		</script>
+	</head>
+</html>
