@@ -20,6 +20,8 @@
 		var Joy = new Person ("Joy", 22, "female");
 		var Shalom = new Person ("Shalom", 20, "female");
 		var Rumbidzai = new Person ("Rumbidzai", 24, "female");
+		var Taurai = new Person ("TAurai", 24, "male");
+
 
 
 
@@ -33,27 +35,52 @@
 		Joy.greeting();
 		Shalom.greeting();
 		Rumbidzai.greeting();
+		Taurai.greeting();
 
 
-hgfhgfgfhgf
 
 
 
-		function ClassRoom(name, students){
-			this.name = name;
-			this.students = students;
+function ClassRoom(name, students){
+			    this.firstname = name; 
+			    this.students = students; 
 
-			this.divas = function(){
-				var ladies = 0;
+		    	this.divas= function(){
+		            var text = "</br> These are the females in our class: <br/> <ul>";
 
-				for(i=0; i<this.students.length; i++){
-					ladies += "<li>" + this.students[i].gender;
-				}
+		           for(i=0; i<this.students.length; i++){
+		               if(this.students[i].gender == "female")//validating the code is important
+		               {
+		                   text += "<li>";
+		                   text += this.students[i].name
+		                   text += "</li>"
+		               }
+		       		}
 
-				var ladiesOnly
-			}
-		}
+		            text += "</ul>"
+		            document.write(text);
+		        }
+		           
 
+		        this.maNinja= function(){
+		           	var text = "<br> These are the males in our class: <br/> <ul>";
+
+				 	for (i=0; i<this.students.length; i++){
+				 		if(this.students[i].gender == "male")
+				 		{
+				 			text += "<li>"
+				 			text += this.students[i].name
+				 			text += "</li>"
+				 		}
+				 	}
+				 	text += "</ul>"
+				 	document.write(text);
+		        }
+	    	}
+
+	       var class1 = new ClassRoom("Micro Work Space " , [ Patricia, Belinda, Yvonne, Gracious, Tatenda, Melody, Joy, Shalom, Rumbidzai, Taurai]);
+			class1.divas();
+			class1.maNinja();
 
 
 
